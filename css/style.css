@@ -1,0 +1,567 @@
+/*=========*/
+/*  RESET  */
+/*=========*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*---------------------------------------*/
+
+/*===========*/
+/*  GENERAL  */
+/*===========*/
+body{
+  /*background-color: #222;*/
+  background-color: #F8F8EC;
+}
+/*@font-face {
+ font-family: "whoa";
+ src: url("whoa.ttf");
+}*/
+p{
+  font-family: 'Mirza', cursive;
+  font-size: 23px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+/*=========================================================*/
+/*   RESPONSIVE   (min-width: 320px and max-width: 800px)  */
+/*=========================================================*/
+
+@media all and (min-width: 320px) and (max-width: 800px) {
+
+/*==========*/
+/*  HEADER  */
+/*==========*/
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background: url('../images/uplogo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  h1{
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 1px 2px #000;
+    font-size: 36px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+/* HOVER DES BOUTONS DE LA NAV */
+  .accueil:hover{
+    color: rgba(253, 160, 41, 0.8);
+  }
+  .accrobranche:hover{
+    color: rgba(75, 163, 60, 0.8);
+  }
+  .skatepark:hover{
+    color: rgba(13, 176, 195, 0.8);
+  }
+  .bistrot:hover{
+    color: rgba(224, 204, 22, 0.8);
+  }
+  .evenement:hover{
+    color: rgba(252, 42, 33, 0.8);
+  }
+  .anniversaire:hover{
+    color: rgba(220, 63, 209, 0.8);
+  }
+/*------------------------------------------------*/
+
+/*===============*/
+/*  MENU BURGER  */
+/*===============*/
+
+  .btn-navigation{
+    z-index: 6;
+  	position: fixed;
+  	right: 10px;
+  	top: 10px;
+  	z-index: 999;
+  	cursor: pointer;
+  }
+
+  .btn-navigation .barre{
+    z-index: 6;
+  	width: 25px;
+  	height: 4px;
+  	background: #FF6F00;
+  	margin-top: 3px;
+  	transition: background .3s ease-in-out;
+  	-webkit-transition: background .3s ease-in-out;
+  }
+
+  .btn-navigation .barre.white{
+  	background: #FF6F00;
+  }
+
+  nav.isOpen{
+  	transform: translateX(0%);
+  	-webkit-transform: translateX(0%);
+  }
+
+  nav{
+    z-index: 5;
+  	position: fixed;
+  	right: 0;
+    top: 0;
+  	padding: 5px;
+  	background: #333;
+  	width: 40%;
+  	height: 100%;
+  	transition: transform .6s ease-in-out;
+  	-webkit-transition: transform .6s ease-in-out;
+  	transform: translateX(100%);
+  	-webkit-transform: translateX(100%);
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 15px;
+  	top: 140px;
+  	transform: translateY(-50%);
+  	-webkit-transform: translateY(-50%);
+  }
+
+  nav ul li{
+  	list-style: none;
+  	margin: 10px 0;
+  }
+
+  nav ul li a{
+  	text-decoration: none;
+  	color:  #fff;
+  	margin: 10px 0;
+  	font-size: 15px;
+  }
+/*------------------------------------------------*/
+
+/*==================*/
+/*  MILIEU DE PAGE  */
+/*==================*/
+main{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section{
+  display: flex;
+  margin: auto;
+  height: auto;
+  width: 90%;
+  flex-direction: column;
+  margin-top: 10px;
+  /*background-color: #F8F3D1;*/
+}
+article{
+  display: flex;
+  flex-direction: column;
+  height: 125px;
+  padding: 2%;
+}
+article p{
+  font-size: 14px;
+}
+img{
+  height: 100%;
+  width: 100%;
+}
+.hrsection{
+  width: 60%;
+  margin: 60px auto;
+  color: #FB7826;
+  border: 4px solid #FB7826;
+}
+.txt_sec, .txt_sec1{
+  flex: 1;
+}
+.img_txt, .calendrier, .menu{
+  flex: 2;
+  height: 200px;
+}
+/*------------------------------------------------*/
+
+/*==========*/
+/*  FOOTER  */
+/*==========*/
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #353535;
+}
+footer p{
+  text-align: center;
+}
+
+.fa{
+  margin: 15px;
+  font-size: 40px;
+  color: #F17013;
+  cursor: pointer;
+  transition: 1s;
+}
+.fa-map:hover{
+  color: #C7BC00;
+}
+.fa-facebook-official:hover{
+  color: #4862A3;
+}
+.fa-info-circle:hover{
+  color: #C1C2C1;
+}
+.div_map{
+display: none;
+}
+  /* HORRAIRE */
+    hr{
+      color: white;
+      width: 80%;
+      margin: auto;
+    }
+    .horraire{
+      font-weight: bold;
+      width: 75%;
+      margin-top: 10px;
+      margin-left: 2%;
+      text-align: center;
+    }
+    .text_horraire1{
+      font-size: 14px;
+    }
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+/*=========================================================*/
+/*   RESPONSIVE   (min-width: 801px and max-width: 1920px)  */
+/*=========================================================*/
+
+@media all and (min-width: 801px) and (max-width: 1920px) {
+
+/*=======*/
+/*  NAV  */
+/*=======*/
+  nav{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(225, 207, 187, 0.5);
+  }
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    width: 100%;
+    list-style: none;
+  }
+  li{
+    height: 100%;
+    width: 100%;   /* Ajout de taille pour les border (Camille) */
+    list-style: none;
+    font-size: 20px;
+    border-right: 2px solid #FB7826; /* Ajout de la border  (Camille) */
+  }
+  li:last-child{
+
+   border: none;   /* On retire la derniere border pour plus de style (Camille) */
+}
+nav  a{
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    background-color: rgba(202, 202, 202, 0.8);
+    border: 2px solid black;
+    border-radius: 30%;
+    padding: 8%;
+    font-size: 25px;
+    color: black;
+  }
+
+/* HOVER DES BOUTONS DE LA NAV */
+  .accueil:hover{
+    color: white;
+    background-color: rgba(253, 160, 41, 0.8);
+  }
+  .accrobranche:hover{
+    color: white;
+    background-color: rgba(75, 163, 60, 0.8);
+  }
+  .skatepark:hover{
+    color: white;
+    background-color: rgba(13, 176, 195, 0.8);
+  }
+  .bistrot:hover{
+    color: white;
+    background-color: rgba(224, 204, 22, 0.8);
+  }
+  .evenement:hover{
+    color: white;
+    background-color: rgba(252, 42, 33, 0.8);
+  }
+  .anniversaire:hover{
+    color: white;
+    background-color: rgba(220, 63, 209, 0.8);
+  }
+/*---------------------------------------*/
+
+/*==========*/
+/*  HEADER  */
+/*==========*/
+  header{
+    background-image: url('../images/bgbody.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 4px solid #FB7826;
+    text-shadow: 4.5px 4.5px 1px black;
+  }
+  h1{
+    text-align: center;
+    padding: 8%;
+    font-size: 80px;
+    font-family: 'Lobster';
+    letter-spacing: 2px;
+    color: #FB7826;
+  }
+  .titreH{
+    font-size: 180px;
+  }
+/*---------------------------------------*/
+
+/*========*/
+/*  MAIN  */
+/*========*/
+  main{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  section{
+    display: flex;
+    margin: auto;
+    height: auto;
+    width: 70%;
+    flex-direction: row;
+    margin-top: 30px;
+    /*background-color: #F8F3D1;*/
+  }
+
+  article{
+    justify-content: space-around;
+    flex-direction: column;
+    height: 270px;
+    padding: 2%;
+    display: flex;
+  }
+
+  h2{
+    font-family: 'Lobster', cursive;
+  }
+
+  img{
+    height: 100%;
+    width: 100%;
+    box-shadow: 10px 10px 5px #888888;
+  }
+  .hrsection{
+    width: 40%;
+    margin: 60px auto;
+    color: #FB7826;
+    border: 4px solid #FB7826;
+  }
+  .txt_sec, .txt_sec1{
+    flex: 2;
+  }
+  .img_txt, .calendrier, .menu{
+    flex: 1;
+  }
+
+/*---------------------------------------*/
+
+/*===============*/
+/*  SECTION MAP  */
+/*===============*/
+  .maps{
+    border-top: 3px solid #FB7826;
+    border-radius: 10px 10px 0px 0px;
+    height: 400px;
+    width: 100%;
+  }
+  .div_map{
+    width: 100%;
+  }
+/*---------------------------------------*/
+
+/*==========*/
+/*  FOOTER  */
+/*==========*/
+  footer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #222;
+    font-size: 18px;
+    color: #FB7826;
+    font-family: 'Mirza', cursive;
+  }
+/* ICON / PARTENAIRES */
+  .info{
+    width: 10%;
+    background-color: inherit;
+  }
+  .fa{
+    color:#FB7826;
+  }
+
+  .fa-facebook-official{
+    margin-top: 5em;
+  }
+  .fa-facebook-official:hover{
+    color: #395794;
+    transition: 1s;
+  }
+  .fc{
+    border: none;
+    background-color: inherit;
+  }
+/* HORRAIRE */
+  hr{
+    color: white;
+    width: 80%;
+    margin: auto;
+  }
+  .AdresseNum{
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    margin-left: 2%;
+    border-right: 3px solid #FB7826;
+    border-left: 3px solid #FB7826;
+  }
+  .AdresseNum p{
+    margin: 2%;
+    color: white;
+  }
+  .AdresseNum article{
+    height: 100px;
+    margin: 1.5em;
+  }
+  .horraire{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-top: 80px;
+    margin-left: 5em;
+    border: 3px solid white;
+    border-radius: 15px;
+  }
+  .text_horraire1{
+    font-size: 23px;
+  }
+/*----------------*/
+/* Formulaire */
+
+form{
+  margin-left: 5em;
+}
+
+label{
+  margin-top: 1em;
+}
+.formulaire{
+  width: 20%;
+}
+.form{
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+font-size: 25px;
+}
+.form input{
+  border: 3px solid #FB7826;
+  border-radius: 5px;
+}
+.labelnom, .labelprenom, .labelemail{
+  width: 15em;
+  height: 2em;
+}
+.labelmessage{
+  border: 3px solid #FB7826;
+  border-radius: 8px;
+}
+.envoyer{
+  height: 3em;
+  width: 8em;
+  margin-top: 2.5em;
+  border-radius: 5%;
+  border: 2px solid #FFF;
+  background-color: #FB7826;
+  color: #FFF;
+}
+
+  #valeur{
+    height: 12em;
+    width: 25em;
+  }
+
+}
+
+
+/*---------------------------------------------  (Camille)  */
+
+/*============*/
+/* Animation */
+/*==========*/
+
+.box-active {
+  animation-name: translateInRight;
+  animation-duration: 5s;
+  animation-iteration-count: revert;
+}
+.box-active2 {
+  animation-name: translateInLeft;
+  animation-duration: 4s;
+  animation-iteration-count: revert;
+}
+
+@keyframes translateInRight {
+  0% {
+    transform: translateX(0%);
+    visibility: visible;
+  }
+
+  50% {
+    transform: translateX(+150%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes translateInLeft {
+  0% {
+    transform: translateX(0%);
+    visibility: visible;
+  }
+
+  50% {
+    transform: translateX(-175%)
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

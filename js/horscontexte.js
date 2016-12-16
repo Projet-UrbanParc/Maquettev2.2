@@ -93,3 +93,47 @@ document.getElementById('link6').onclick = function()
     document.getElementById('section3').classList.add('box-active');
     document.getElementById('section2').classList.add('box-active2');
 };
+
+/// Effets sonore Note faire une fonction condition pour ajouter le mute? 
+    //Effet Audio Skatepark 
+    $('#link1').easyAudioEffects({ 
+      ogg: "audio/sonacceuil.ogg", 
+      mp3: "audio/sonacceuil.mp3", 
+      eventType: "click", 
+      playType: "oneShotMonophonic" 
+    }); 
+    //Effet Audio Accrobranche 
+    $('#link2').easyAudioEffects({ 
+      ogg: "audio/branchage.ogg", 
+      mp3: "audio/branchage.mp3", 
+      eventType: "click", 
+      playType: "oneShotMonophonic" 
+    }); 
+    //Effet Audio Skatepark 
+    $('#link3').easyAudioEffects({ 
+      ogg: "audio/sonskate.ogg", 
+      mp3: "audio/sonskate.mp3", 
+      eventType: "click", 
+      playType: "oneShotMonophonic" 
+    }); 
+    //Effet Audio Bistrot 
+    $('#link4').easyAudioEffects({ 
+      ogg: "audio/ambiancecafe.ogg", 
+      mp3: "audio/ambiancecafe.mp3", 
+      eventType: "click", 
+      playType: "oneShotMonophonic" 
+    }); 
+    //Effet Audio Evenement 
+    $('#link5').easyAudioEffects({ 
+      ogg: "audio/ambevent.ogg", 
+      mp3: "audio/ambevent.mp3", 
+      eventType: "click", 
+      playType: "oneShotMonophonic" 
+    }); 
+    //Effet Audio Anniversaire 
+    $('#link6').easyAudioEffects({ 
+      ogg: "audio/sonannif.ogg", 
+      mp3: "audio/sonannif.mp3", 
+      eventType: "click", 
+      playType: "oneShotMonophonic" 
+    }); 

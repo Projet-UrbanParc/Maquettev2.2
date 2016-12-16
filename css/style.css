@@ -33,7 +33,7 @@ p{
 /*   RESPONSIVE   (min-width: 320px and max-width: 800px)  */
 /*=========================================================*/
 
-@media all and (min-width: 320px) and (max-width: 800px) {
+@media all and (min-width: 320px) and (max-width: 1262px) {
 
 /*==========*/
 /*  HEADER  */
@@ -222,6 +222,7 @@ footer p{
 .fa-facebook-official:hover{
   color: #4862A3;
 }
+
 .fa-info-circle:hover{
   color: #C1C2C1;
 }
@@ -251,7 +252,7 @@ display: none;
 /*   RESPONSIVE   (min-width: 801px and max-width: 1920px)  */
 /*=========================================================*/
 
-@media all and (min-width: 801px) and (max-width: 1920px) {
+@media all and (min-width: 1263px) and (max-width: 1920px) {
 
 /*=======*/
 /*  NAV  */
@@ -291,7 +292,9 @@ nav  a{
     font-size: 25px;
     color: black;
   }
-
+.fa-bell-slash{
+  cursor: pointer;
+}
 /* HOVER DES BOUTONS DE LA NAV */
   .accueil:hover{
     color: white;
@@ -393,7 +396,7 @@ nav  a{
 
 /*===============*/
 /*  SECTION MAP  */
-/*===============*/
+/*=============== Pourquoi ne pas appeler directement iframe? (Alex)*/
   .maps{
     border-top: 3px solid #FB7826;
     border-radius: 10px 10px 0px 0px;
@@ -420,6 +423,7 @@ nav  a{
 /* ICON / PARTENAIRES */
   .info{
     width: 10%;
+    margin-left: 200px;
     background-color: inherit;
   }
   .fa{
@@ -476,6 +480,8 @@ nav  a{
 
 form{
   margin-left: 5em;
+  border-right: 3px solid #FB7826;
+  padding: 5%;
 }
 
 label{
@@ -488,6 +494,7 @@ label{
 display: flex;
 align-items: flex-start;
 flex-direction: column;
+margin-left: -50px;
 font-size: 25px;
 }
 .form input{

@@ -28,7 +28,7 @@ $( function() {
 
 // Fonction au click //
 
-    { $( "a").on( "click", function() {
+    { $( "#calendar a").on( "click", function() {
 
         $("#calendar").datepicker().val();
         $( "#dialog" ).dialog( "open" );

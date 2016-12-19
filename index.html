@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="./css/calendar.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="js/jquery.easyaudioeffects.1.0.0.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.easyaudioeffects.1.0.0.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
   </head>
   <body>
@@ -39,7 +39,7 @@
       </div>
   <!-- HEADER -->
       <header>
-          <h1><span class="titreH">U</span>rban <span class="titreH">P</span>ark</h1>
+          <h1><span class="titreH">U</span>rban <span class="titreH">P</span>arc</h1>
       </header>
   <!-- MAIN -->
       <main>
@@ -60,7 +60,7 @@
                   </p>
               </article>
           </section>
-          <hr class="hrsection"/>
+          <hr class="hrsection"/> <!--régler la hauteur min (min-height) dans le média query-->
       <!-- SECTION II -->
           <section id='section2' class="section2">
             <!-- ARTICLE TEXTE -->
@@ -107,12 +107,9 @@
           <hr class="hrsection"/>
       </main>
     <!-- GOOGLE MAP -->
-      </div>
-      <section class="div_map"> <!--Why?!!! (Alex)-->
          <iframe class="maps" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDept59DU6G3wh0YDLtdkDAqcSW_l-cxJE&q=Urban+Parc,Ales+FR" allowfullscreen></iframe>
          <!--API Key: AIzaSyDept59DU6G3wh0YDLtdkDAqcSW_l-cxJE-->
          <!--Style map avec accords du domaine: https://maps.googleapis.com/maps/api/staticmap?key=YOUR_API_KEY&center=44.1331529476397,4.078829541655424&zoom=15&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x212121&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x757575&style=element:labels.text.stroke%7Ccolor:0x212121&style=feature:administrative%7Celement:geometry%7Ccolor:0x757575&style=feature:administrative.country%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:administrative.land_parcel%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0x3e251c%7Csaturation:100%7Cvisibility:on&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.park%7Celement:geometry%7Ccolor:0x181818&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:poi.park%7Celement:labels.text.stroke%7Ccolor:0x1b1b1b&style=feature:road%7Celement:geometry.fill%7Ccolor:0x2c2c2c&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x8a8a8a&style=feature:road.arterial%7Celement:geometry%7Ccolor:0x373737&style=feature:road.highway%7Celement:geometry%7Ccolor:0x3c3c3c&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0x4e4e4e&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0xf17013&style=feature:road.local%7Celement:labels.text.stroke%7Ccolor:0x37251c&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:water%7Celement:geometry%7Ccolor:0x000000&style=feature:water%7Celement:geometry.fill%7Ccolor:0x3f8ba8&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x3d3d3d&size=480x360-->
-      </section>
       <footer>
         <!-- HORRAIRE -->
           <section class="horraire">
@@ -150,7 +147,7 @@
                 <input type="text" name="email" value="email" placeholder="xyz@gmail.com.." class="labelemail">
                 <br><br>
                 <label>Message</label>
-                <textarea id="valeur" name="Message" type="text" placeholder="Votre Message.." class="labelmessage"></textarea><br/>  <!--id valeur useless il n'y a qu'un seul textarea (Alex)-->
+                <textarea name="Message" type="text" placeholder="Votre Message.." class="labelmessage"></textarea><br/>  <!--id valeur useless il n'y a qu'un seul textarea (Alex)-->
                 <input type="Submit" class="envoyer" value="Envoyer">
               </div>
             </form>
@@ -160,6 +157,7 @@
              <a href="https://www.facebook.com/urbanparc/" target="_blank" class="fc"><i class="fa fa-facebook-official" style="font-size:48px"></i></a>
           </section>
       </footer>
+      </div>
       <script type="text/javascript" src="js/horscontexte.js"></script>
       <script type="text/javascript" src="js/calendrier.js"></script>
   </body>

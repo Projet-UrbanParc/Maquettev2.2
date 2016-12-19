@@ -226,7 +226,7 @@ footer p{
 .fa-info-circle:hover{
   color: #C1C2C1;
 }
-.div_map{
+iframe{
 display: none;
 }
   /* HORRAIRE */
@@ -519,7 +519,7 @@ font-size: 25px;
   color: #FFF;
 }
 
-  #valeur{
+  textarea{
     height: 12em;
     width: 25em;
   }

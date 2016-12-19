@@ -94,7 +94,7 @@ document.getElementById('link6').onclick = function()
     document.getElementById('section2').classList.add('box-active2');
 };
 
-/// Effets sonore Note faire une fonction condition pour ajouter le mute?
+/// Effets sonore
       //Effet Audio Acceuil
       $('#link1').click(function(){
         $('#'+$(this).attr('rel'))[0].play();
@@ -135,6 +135,9 @@ document.getElementById('link6').onclick = function()
 
       document.getElementById('mute').addEventListener('click', function(e){
         e = e || window.event;
+
+        $('#bellSlash').show();
+        $('#bell').hide();
         son1.muted = !son1.muted;
         son2.muted = !son2.muted;
         son3.muted = !son3.muted;
@@ -144,3 +147,12 @@ document.getElementById('link6').onclick = function()
         e.preventDefault();
 
       }, false);
+
+      //Afficher cacher Bell/Bell-Slash
+      $(document).ready(function(){
+        $('#bellSlash').hide();
+        $('#bellSlash').click(function(){
+          $('#bell').show();
+          $('#bellSlash').hide();
+        });
+      });

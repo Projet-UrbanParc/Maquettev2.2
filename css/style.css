@@ -296,6 +296,11 @@ nav  a{
     font-size: 25px;
     color: black;
   }
+
+.fa-bell{
+  cursor: pointer;
+}
+
 .fa-bell-slash{
   cursor: pointer;
 }

@@ -94,46 +94,53 @@ document.getElementById('link6').onclick = function()
     document.getElementById('section2').classList.add('box-active2');
 };
 
-/// Effets sonore Note faire une fonction condition pour ajouter le mute? 
-    //Effet Audio Skatepark 
-    $('#link1').easyAudioEffects({ 
-      ogg: "audio/sonacceuil.ogg", 
-      mp3: "audio/sonacceuil.mp3", 
-      eventType: "click", 
-      playType: "oneShotMonophonic" 
-    }); 
-    //Effet Audio Accrobranche 
-    $('#link2').easyAudioEffects({ 
-      ogg: "audio/branchage.ogg", 
-      mp3: "audio/branchage.mp3", 
-      eventType: "click", 
-      playType: "oneShotMonophonic" 
-    }); 
-    //Effet Audio Skatepark 
-    $('#link3').easyAudioEffects({ 
-      ogg: "audio/sonskate.ogg", 
-      mp3: "audio/sonskate.mp3", 
-      eventType: "click", 
-      playType: "oneShotMonophonic" 
-    }); 
-    //Effet Audio Bistrot 
-    $('#link4').easyAudioEffects({ 
-      ogg: "audio/ambiancecafe.ogg", 
-      mp3: "audio/ambiancecafe.mp3", 
-      eventType: "click", 
-      playType: "oneShotMonophonic" 
-    }); 
-    //Effet Audio Evenement 
-    $('#link5').easyAudioEffects({ 
-      ogg: "audio/ambevent.ogg", 
-      mp3: "audio/ambevent.mp3", 
-      eventType: "click", 
-      playType: "oneShotMonophonic" 
-    }); 
-    //Effet Audio Anniversaire 
-    $('#link6').easyAudioEffects({ 
-      ogg: "audio/sonannif.ogg", 
-      mp3: "audio/sonannif.mp3", 
-      eventType: "click", 
-      playType: "oneShotMonophonic" 
-    }); 
+/// Effets sonore Note faire une fonction condition pour ajouter le mute?
+      //Effet Audio Acceuil
+      $('#link1').click(function(){
+        $('#'+$(this).attr('rel'))[0].play();
+      });
+
+      //Effet Audio Accrobranche
+      $('#link2').click(function(){
+        $('#'+$(this).attr('rel'))[0].play();
+      });
+
+      //Effet Audio Skatepark
+      $('#link3').click(function(){
+        $('#'+$(this).attr('rel'))[0].play();
+      });
+
+      //Effet Audio Bistrot
+      $('#link4').click(function(){
+        $('#'+$(this).attr('rel'))[0].play();
+      });
+
+      //Effet Audio Event
+      $('#link5').click(function(){
+        $('#'+$(this).attr('rel'))[0].play();
+      });
+
+      //Effet Audio Anniversaire
+      $('#link6').click(function(){
+        $('#'+$(this).attr('rel'))[0].play();
+      });
+
+      //Mute Audio
+      var son1 = document.getElementById('son1');
+      var son2 = document.getElementById('son2');
+      var son3 = document.getElementById('son3');
+      var son4 = document.getElementById('son4');
+      var son5 = document.getElementById('son5');
+      var son6 = document.getElementById('son6');
+
+      document.getElementById('mute').addEventListener('click', function(e){
+        e = e || window.event;
+        son1.muted = !son1.muted;
+        son2.muted = !son2.muted;
+        son3.muted = !son3.muted;
+        son4.muted = !son4.muted;
+        son5.muted = !son5.muted;
+        son6.muted = !son6.muted;
+        e.preventDefault();
+
+      }, false);

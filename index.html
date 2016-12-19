@@ -14,21 +14,27 @@
     <link rel="stylesheet" type="text/css" href="./css/calendar.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="js/jquery.easyaudioeffects.1.0.0.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
   </head>
   <body>
     <div class="container">
   <!-- BARRE DE NAVIGATION -->
+      <!--Effets Audio Nav-->
+      <audio id="son1" src="audio/sonacceuil.ogg"></audio>
+      <audio id="son2" src="audio/branchage.ogg"></audio>
+      <audio id="son3" src="audio/sonskate.ogg"></audio>
+      <audio id="son4" src="audio/ambiancecafe.ogg"></audio>
+      <audio id="son5" src="audio/ambevent.ogg"></audio>
+      <audio id="son6" src="audio/sonannif.ogg"></audio>
       <nav>
           <ul>
-              <li><a id='link1' href="#" class="accueil">Accueil</a></li>
-              <li><a id='link2' href="#" class="accrobranche">Accrobranche</a></li>
-              <li><a id='link3' href="#" class="skatepark">SkatePark</a></li>
-              <li><a id='link4' href="#" class="bistrot">Bistrot</a></li>
-              <li><a id='link5' href="#" class="evenement">Evènement</a></li>               <!-- Ajout des #link pour le JavaScript (Camille) -->
-              <li><a id='link6' href="#" class="anniversaire">Anniversaire</a></li>
-              <li><i class="fa fa-bell-slash" style="font-size:30px" aria-hidden="true" id="mute"></i> <!--Bouton mute provisoire-->
+              <li><a id='link1' rel="son1" href="#" class="accueil">Accueil</a></li>                  <!--Ajout des rel='' pour les effets audio-->
+              <li><a id='link2' rel="son2" href="#" class="accrobranche">Accrobranche</a></li>
+              <li><a id='link3' rel="son3" href="#" class="skatepark">SkatePark</a></li>
+              <li><a id='link4' rel="son4" href="#" class="bistrot">Bistrot</a></li>
+              <li><a id='link5' rel="son5" href="#" class="evenement">Evènement</a></li>               <!-- Ajout des #link pour le JavaScript (Camille) -->
+              <li><a id='link6' rel="son6" href="#" class="anniversaire">Anniversaire</a></li>
+              <li><a id="mute" href="#" ><i class="fa fa-bell-slash" style="font-size:30px" aria-hidden="true"></i></a></li> <!--Bouton mute transformé en lien-->
           </ul>
       </nav>
   <!-- BURGER RESPONSIVE PORTABLE-->

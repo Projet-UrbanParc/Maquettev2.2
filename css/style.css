@@ -286,7 +286,7 @@ display: none;
 
    border: none;   /* On retire la derniere border pour plus de style (Camille) */
 }
-nav  a{
+nav a{
     text-decoration: none;
     font-family: 'Lobster', cursive;
     background-color: rgba(202, 202, 202, 0.8);
@@ -297,12 +297,16 @@ nav  a{
     color: black;
   }
 
-.fa-bell{
+.fa-bell-slash{
   cursor: pointer;
 }
 
-.fa-bell-slash{
-  cursor: pointer;
+.fa-bell-slash:hover{
+  color: red;
+}
+
+.fa-bell-slash:active{
+  color: #006418;
 }
 /* HOVER DES BOUTONS DE LA NAV */
   .accueil:hover{

@@ -43,123 +43,131 @@ audio{
 
 @media all and (min-width: 320px) and (max-width: 1262px) {
 
-/*==========*/
-/*  HEADER  */
-/*==========*/
-  header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 250px;
-    background: url('../images/uplogo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-bottom: 4px solid #158D00;
-    text-shadow: 4.5px 4.5px 1px black;
-  }
-  h1{
-    color: #158D00;
-    font-family: 'Lobster', cursive;;
-    text-shadow: 1px 2px #000;
-    font-size: 36px;
-    margin-top: 20px;
-    padding: 20px;
-  }
-/* HOVER DES BOUTONS DE LA NAV */
-  .information:hover{
-    color: rgba(251, 120, 38, 0.8);
-  }
-  .acceuil:hover{
-    color: rgba(253, 160, 41, 0.8);
-  }
-  .accrobranche:hover{
-    color: rgba(75, 163, 60, 0.8);
-  }
-  .skatepark:hover{
-    color: rgba(13, 176, 195, 0.8);
-  }
-  .trampo:hover{
-    color: rgba(224, 204, 22, 0.8);
-  }
-  .evenement:hover{
-    color: rgba(252, 42, 33, 0.8);
-  }
-  .anniversaire:hover{
-    color: rgba(220, 63, 209, 0.8);
-  }
-  .media:hover{
-    color: rgba(118, 108, 255, 0.8);
-  }
-/*-----------------------------------------------*/
+  /*==========*/
+  /*  HEADER  */
+  /*==========*/
+    header{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      height: 250px;
+      background: url('../images/uplogo.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-bottom: 4px solid #FB7826;
+      text-shadow: 4.5px 4.5px 1px black;
+    }
 
-/*===============*/
-/*  MENU BURGER  */
-/*===============*/
+    h1{
+      color: white;
+      font-family: 'Lobster', cursive;;
+      text-shadow: 1px 2px #000;
+      font-size: 36px;
+      margin-top: 20px;
+      padding: 20px;
+    }
+  /* HOVER DES BOUTONS DE LA NAV */
+    .information:hover{
+      color: rgba(251, 120, 38, 0.8);
+    }
+    .acceuil:hover{
+      color: rgba(253, 160, 41, 0.8);
+    }
+    .accrobranche:hover{
+      color: rgba(75, 163, 60, 0.8);
+    }
+    .skatepark:hover{
+      color: rgba(13, 176, 195, 0.8);
+    }
+    .trampo:hover{
+      color: rgba(224, 204, 22, 0.8);
+    }
+    .evenement:hover{
+      color: rgba(252, 42, 33, 0.8);
+    }
+    .anniversaire:hover{
+      color: rgba(220, 63, 209, 0.8);
+    }
+    .media:hover{
+      color: rgba(118, 108, 255, 0.8);
+    }
+  /*-----------------------------------------------*/
 
-  .btn-navigation{
-    z-index: 6;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: 999;
-    cursor: pointer;
-  }
-  .btn-navigation .barre{
-    z-index: 6;
-    width: 25px;
-    height: 4px;
-    background: #158D00;
-    margin-top: 3px;
-    transition: background .3s ease-in-out;
-    -webkit-transition: background .3s ease-in-out;
-  }
-  .btn-navigation .barre.white{
-    background: #158D00;
-  }
-  nav.isOpen{
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-  }
-  nav{
-    z-index: 5;
-    position: fixed;
-    right: 0;
-    top: 0;
-    padding: 5px;
-    background: #333;
-    width: 40%;
-    height: 100%;
-    transition: transform .6s ease-in-out;
-    -webkit-transition: transform .6s ease-in-out;
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-  }
-  nav ul{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin-left: 15px;
-    top: 220px;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-  }
-  nav ul li{
-    list-style: none;
-    margin: 10px 0;
-  }
-  nav ul li a{
-    text-decoration: none;
-    color:  #fff;
-    margin: 10px 0;
-    font-size: 15px;
-  }
-/*------------------------------------------------*/
+  /*===============*/
+  /*  MENU BURGER  */
+  /*===============*/
 
-/*=========*/
-/*  NAV 2  */
-/*=========*/
+    .btn-navigation{
+      z-index: 6;
+      position: fixed;
+      right: 10px;
+      top: 10px;
+      z-index: 999;
+      cursor: pointer;
+    }
+
+    .btn-navigation .barre{
+      z-index: 6;
+      width: 25px;
+      height: 4px;
+      background: #FF6F00;
+      margin-top: 3px;
+      transition: background .3s ease-in-out;
+      -webkit-transition: background .3s ease-in-out;
+    }
+
+    .btn-navigation .barre.white{
+      background: #FF6F00;
+    }
+
+    nav.isOpen{
+      transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+    }
+
+    nav{
+      z-index: 5;
+      position: fixed;
+      right: 0;
+      top: 0;
+      padding: 5px;
+      background: #333;
+      width: 40%;
+      height: 100%;
+      transition: transform .6s ease-in-out;
+      -webkit-transition: transform .6s ease-in-out;
+      transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+    }
+
+    nav ul{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      margin-left: 15px;
+      top: 220px;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+    }
+
+    nav ul li{
+      list-style: none;
+      margin: 10px 0;
+    }
+
+    nav ul li a{
+      text-decoration: none;
+      color:  #fff;
+      margin: 10px 0;
+      font-size: 15px;
+    }
+  /*------------------------------------------------*/
+
+  /*=========*/
+  /*  NAV 2  */
+  /*=========*/
   .nav2{
     display: flex;
     flex-direction: column;
@@ -178,11 +186,11 @@ audio{
   .nav2 a{
     color: white;
   }
-/*------------------------------------------------*/
+  /*------------------------------------------------*/
 
-/*==================*/
-/*  MILIEU DE PAGE  */
-/*==================*/
+  /*==================*/
+  /*  MILIEU DE PAGE  */
+  /*==================*/
   main{
     z-index: -1;
     display: flex;
@@ -214,8 +222,8 @@ audio{
   .hrsection{
     width: 60%;
     margin: 60px auto;
-    color: #158D00;
-    border: 4px solid #158D00;
+    color: #FB7826;
+    border: 4px solid #FB7826;
   }
   .txt_sec, .txt_sec1{
     flex: 1;
@@ -224,101 +232,102 @@ audio{
     flex: 2;
     height: 200px;
   }
-/*========*/
-/*  MAPS  */
-/*========*/
+  /*========*/
+  /*  MAPS  */
+  /*========*/
   .maps{
-    border-top: 3px solid #158D00;
+    border-top: 3px solid #FB7826;
     border-radius: 10px 10px 0px 0px;
   }
-/*=======================*/
-/*  MAIN BISTROT TOGGLE  */
-/*=======================*/
-  #mainbistrot{
-    position: absolute;
-    background-color: rgb(51, 51, 51);
-    margin-top: -6px;
-    height: 45em;
-    width: 100%;
-    z-index: 99999;
-  }
-  #mainbistrot p{
-    color: white;
-    font-size: 16px;
-    font-family: 'Mirza', cursive;
-  }
-  #mainbistrot section{
-    margin-bottom: -0.05em;
-    width: 80%;
-  }
-  #mainbistrot article{
-    width: 100%;
-  }
-  #mainbistrot h2{
-    font-size: 18px;
-    color: #FB7826;
-  }
-  #mainbistrot img{
-    display: none;
-  }
-  .hrsection_bistrot{
-    color: #FB7826;
-    margin: 5px auto;
-    width: 45%;
-    border: 4px solid #FB7826;
-  }
-/*------------------------------------------------*/
+  /*=======================*/
+  /*  MAIN BISTROT TOGGLE  */
+  /*=======================*/
+    #mainbistrot{
+      position: absolute;
+      background-color: rgb(51, 51, 51);
+      margin-top: -6px;
+      height: 45em;
+      width: 100%;
+      z-index: 99999;
+    }
+    #mainbistrot p{
+      color: white;
+      font-size: 16px;
+      font-family: 'Mirza', cursive;
+    }
+    #mainbistrot section{
+      margin-bottom: -0.05em;
+      width: 80%;
+    }
+    #mainbistrot article{
+      width: 100%;
+    }
+    #mainbistrot h2{
+      font-size: 18px;
+      color: #FB7826;
+    }
+    #mainbistrot img{
+      display: none;
+    }
+    .hrsection_bistrot{
+      color: #FB7826;
+      margin: 5px auto;
+      width: 45%;
+      border: 4px solid #FB7826;
+    }
+  /*------------------------------------------------*/
 
-/*==========*/
-/*  FOOTER  */
-/*==========*/
-  footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #222;
-    color: white;
+  /*==========*/
+  /*  FOOTER  */
+  /*==========*/
+    footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      background-color: #222;
+      color: white;
+    }
+    footer a{
+      text-decoration: none;
+      color: white;
+    }
+    footer a:hover{
+      color: #FB7826;
+    }
+    footer h3{
+      color: #FB7826;
+      font-size: 24px;
+      margin-bottom: 0.5em;
+    }
+    footer article{
+      margin: 2.5em;
+    }
+    .info{
+      margin-bottom: -50px;
+    }
+    .fa{
+      color: #FB7826;
+    }
+    .lienSocial{
+      text-align: center;
+    }
+    .AdresseNum p{
+      font-size: 17px;
+    }
+    .fa-facebook-official{
+      transition: 1s;
+    }
+    .fa-facebook-official:hover{
+      color: #395794;
+      transition: 1s;
+    }
   }
-  footer a{
-    text-decoration: none;
-    color: white;
-  }
-  footer a:hover{
-    color: rgb(75, 163, 60);
-  }
-  footer h3{
-    color: #158D00;
-    font-size: 24px;
-    margin-bottom: 0.5em;
-  }
-  footer article{
-    margin: 2.5em;
-  }
-  .info{
-    margin-bottom: -50px;
-  }
-  .fa{
-    color: #158D00;
-  }
-  .lienSocial{
-    text-align: center;
-  }
-  .AdresseNum p{
-    font-size: 17px;
-  }
-  .fa-facebook-official{
-    transition: 1s;
-  }
-  .fa-facebook-official:hover{
-    color: #395794;
-    transition: 1s;
-  }
-}
 /*---------------------------------------------------------------------------------------------------------------------*/
 
-/*===========================================================*/
-/*   RESPONSIVE   (min-width: 1263px and max-width: 1920px)  */ /* Couleur changer par Kévin */
-/*===========================================================*/
+/*=========================================================*/
+/*   RESPONSIVE   (min-width: 1263px and max-width: 1920px)  */
+/*=========================================================*/
 
 @media all and (min-width: 1263px) and (max-width: 1920px) {
 
@@ -344,7 +353,7 @@ audio{
      width: 50%;   /* Ajout de taille pour les border (Camille) */
      list-style: none;
      font-size: 0.5px;
-     border-right: 2px solid #158D00;  /* Ajout de la border  (Camille) */
+     border-right: 2px solid #F5E342;  /* Ajout de la border  (Camille) */
    }
    li:last-child{
 
@@ -393,7 +402,7 @@ audio{
     transition: 0.7s;
     color: white;
   }
-/*=======================*/ /* Crée par Kévin */
+/*=======================*/
 /*  MAIN BISTROT TOGGLE  */
 /*=======================*/
   #mainbistrot{
@@ -417,17 +426,15 @@ audio{
   #mainbistrot h2{
     color: #FB7826;
   }
+  #mainbistrot .hrsection{
+    margin: 50px auto;
+    width: 30%;
+  }
   #mainbistrot p{
     font-family: 'Mirza', cursive;
   }
   #mainbistrot img{
     box-shadow: 4px 4px 5px #888888;
-  }
-  .hrsection_bistrot{
-    color: #FB7826;
-    margin: 50px auto;
-    width: 30%;
-    border: 4px solid #FB7826;
   }
 /* HOVER DES BOUTONS DE LA NAV */
   .information:hover{
@@ -471,7 +478,7 @@ audio{
     background-image: url('../images/bgbody.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom: 4px solid #158D00;
+    border-bottom: 4px solid #F5E342;
     text-shadow: 4.5px 4.5px 1px black;
   }
   h1{
@@ -480,7 +487,7 @@ audio{
     font-size: 80px;
     font-family: 'Lobster', cursive;
     letter-spacing: 2px;
-    color: #158D00;
+    color: #F5E342;
   }
   .titreH{
     font-size: 180px;
@@ -525,11 +532,23 @@ audio{
   span{
     font-size: 16px;
   }
+  .img_logo img{
+    width: 42em;
+  }
+
+  .image_infos {
+    width: 80%;
+  }
+
+  .image_infos img{
+    border: 2px solid black;
+    margin-left: 2em;
+  }
   .hrsection{
     width: 40%;
     margin: 60px auto;
-    color: #158D00;
-    border: 4px solid #158D00;
+    color: #F5E342;
+    border: 4px solid #F5E342;
   }
   .txt_sec, .txt_sec1{
     flex: 2;
@@ -546,9 +565,9 @@ audio{
 
 /*===============*/
 /*  SECTION MAP  */
-/*=============== Pourquoi ne pas appeler directement iframe? (Alex)*/
+/*===============*/
   .maps{
-    border-top: 3px solid #158D00;
+    border-top: 3px solid #F5E342;
     border-radius: 10px 10px 0px 0px;
     height: 400px;
     width: 100%;
@@ -571,17 +590,17 @@ audio{
     color: white;
   }
   footer a:hover{
-    color: rgb(75, 163, 60);
+    color: rgb(224, 204, 22);
   }
   footer article{
     margin-top: -6.5em;
   }
   footer h3{
-    color: #158D00;
+    color: #F5E342;
     font-size: 25px;
   }
   .fa{
-    color: #158D00;
+    color: #F5E342;
   }
   .lienSocial{
     text-align: center;

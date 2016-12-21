@@ -12,7 +12,7 @@ $(document).ready(function(){
 });
   $(function(){
     $('#boutonbistrot').click(function(){
-      $('#mainbistrot').css("background-color", "rgb(0, 0, 0)");
+
       $('#mainbistrot').toggle('blind');
     });
   });

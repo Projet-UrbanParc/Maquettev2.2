@@ -16,10 +16,6 @@ body{
   background-color: #F8F8EC;
   z-index: 1;
 }
-/*@font-face {
- font-family: "whoa";
- src: url("whoa.ttf");
-}*/
 p{
   font-family: 'Mirza', cursive;
   font-size: 23px;
@@ -56,6 +52,8 @@ audio{
     background: url('../images/uplogo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    border-bottom: 4px solid #FB7826;
+    text-shadow: 4.5px 4.5px 1px black;
   }
 
   h1{
@@ -163,10 +161,34 @@ audio{
   }
 /*------------------------------------------------*/
 
+/*=========*/
+/*  NAV 2  */
+/*=========*/
+.nav2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(51, 51, 51);
+  height: 35px;
+  color: white;
+}
+.nav2 p{
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+}
+.nav2 a{
+  color: white;
+}
+/*------------------------------------------------*/
+
 /*==================*/
 /*  MILIEU DE PAGE  */
 /*==================*/
 main{
+  z-index: -1;
   display: flex;
   flex-direction: column;
   margin-top: 10px;
@@ -179,7 +201,6 @@ section{
   width: 90%;
   flex-direction: column;
   margin-top: 10px;
-  /*background-color: #F8F3D1;*/
 }
 article{
   display: flex;
@@ -207,6 +228,49 @@ img{
   flex: 2;
   height: 200px;
 }
+/*========*/
+/*  MAPS  */
+/*========*/
+.maps{
+  border-top: 3px solid #FB7826;
+  border-radius: 10px 10px 0px 0px;
+}
+/*=======================*/
+/*  MAIN BISTROT TOGGLE  */
+/*=======================*/
+  #mainbistrot{
+    position: absolute;
+    background-color: rgb(51, 51, 51);
+    margin-top: -6px;
+    height: 45em;
+    width: 100%;
+    z-index: 99999;
+  }
+  #mainbistrot p{
+    color: white;
+    font-size: 16px;
+    font-family: 'Mirza', cursive;
+  }
+  #mainbistrot section{
+    margin-bottom: -0.05em;
+    width: 80%;
+  }
+  #mainbistrot article{
+    width: 100%;
+  }
+  #mainbistrot h2{
+    font-size: 18px;
+    color: #FB7826;
+  }
+  #mainbistrot img{
+    display: none;
+  }
+  .hrsection_bistrot{
+    color: #FB7826;
+    margin: 5px auto;
+    width: 45%;
+    border: 4px solid #FB7826;
+  }
 /*------------------------------------------------*/
 
 /*==========*/
@@ -229,7 +293,7 @@ img{
   }
   footer h3{
     color: #FB7826;
-    font-size: 25px;
+    font-size: 24px;
     margin-bottom: 0.5em;
   }
   footer article{
@@ -243,6 +307,9 @@ img{
   }
   .lienSocial{
     text-align: center;
+  }
+  .AdresseNum p{
+    font-size: 17px;
   }
   .fa-facebook-official{
     transition: 1s;
@@ -335,6 +402,7 @@ img{
 /*  MAIN BISTROT TOGGLE  */
 /*=======================*/
   #mainbistrot{
+    background-color: black;
     position: absolute;
     margin-top: -6px;
     height: 200em;
@@ -494,7 +562,7 @@ img{
 
 /*===============*/
 /*  SECTION MAP  */
-/*=============== Pourquoi ne pas appeler directement iframe? (Alex)*/
+/*===============*/
   .maps{
     border-top: 3px solid #FB7826;
     border-radius: 10px 10px 0px 0px;

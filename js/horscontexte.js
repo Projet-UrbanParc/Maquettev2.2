@@ -135,6 +135,7 @@ document.getElementById('link6').onclick = function()
       var son6 = document.getElementById('son6');
 
       document.getElementById('mute').addEventListener('click', function(e){
+
         e = e || window.event;
 
         son1.muted = !son1.muted;
@@ -145,4 +146,6 @@ document.getElementById('link6').onclick = function()
         son6.muted = !son6.muted;
         e.preventDefault();
 
-      }, false);
+
+
+}, false);

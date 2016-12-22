@@ -56,12 +56,12 @@ audio{
       background: url('../images/uplogo.jpg');
       background-size: cover;
       background-repeat: no-repeat;
-      border-bottom: 4px solid #FB7826;
+      border-bottom: 4px solid #BE150E;
       text-shadow: 4.5px 4.5px 1px black;
     }
 
     h1{
-      color: white;
+      color: #BE150E;
       font-family: 'Lobster', cursive;;
       text-shadow: 1px 2px #000;
       font-size: 36px;
@@ -112,14 +112,14 @@ audio{
       z-index: 6;
       width: 25px;
       height: 4px;
-      background: #FF6F00;
+      background: #BE150E;
       margin-top: 3px;
       transition: background .3s ease-in-out;
       -webkit-transition: background .3s ease-in-out;
     }
 
     .btn-navigation .barre.white{
-      background: #FF6F00;
+      background: #BE150E;
     }
 
     nav.isOpen{
@@ -222,8 +222,8 @@ audio{
   .hrsection{
     width: 60%;
     margin: 60px auto;
-    color: #FB7826;
-    border: 4px solid #FB7826;
+    color: #BE150E;
+    border: 4px solid #BE150E;
   }
   .txt_sec, .txt_sec1{
     flex: 1;
@@ -236,7 +236,7 @@ audio{
   /*  MAPS  */
   /*========*/
   .maps{
-    border-top: 3px solid #FB7826;
+    border-top: 3px solid #BE150E;
     border-radius: 10px 10px 0px 0px;
   }
   /*=======================*/
@@ -244,7 +244,7 @@ audio{
   /*=======================*/
     #mainbistrot{
       position: absolute;
-      background-color: rgb(51, 51, 51);
+      background-color: black;
       margin-top: -6px;
       height: 45em;
       width: 100%;
@@ -293,10 +293,10 @@ audio{
       color: white;
     }
     footer a:hover{
-      color: #FB7826;
+      color: #FF3C32;
     }
     footer h3{
-      color: #FB7826;
+      color: #BE150E;
       font-size: 24px;
       margin-bottom: 0.5em;
     }
@@ -307,7 +307,7 @@ audio{
       margin-bottom: -50px;
     }
     .fa{
-      color: #FB7826;
+      color: #BE150E;
     }
     .lienSocial{
       text-align: center;
@@ -402,42 +402,42 @@ audio{
     transition: 0.7s;
     color: white;
   }
-/*=======================*/
-/*  MAIN BISTROT TOGGLE  */
-/*=======================*/
-  #mainbistrot{
-    position: absolute;
-    margin-top: -6px;
-    height: 200em;
-    width: 100%;
-    z-index: 99999;
-  }
-  #mainbistrot p{
-    font-size: 25px;
-  }
-  #mainbistrot section{
-    width: 40%;
-  }
-  #mainbistrot article{
-    margin: 2%;
-    height: 165px;
-    width: 30%;
-  }
-  #mainbistrot h2{
-    color: #FB7826;
-  }
-  #mainbistrot p{
-    font-family: 'Mirza', cursive;
-  }
-  #mainbistrot img{
-    box-shadow: 4px 4px 5px #888888;
-  }
-  .hrsection_bistrot{
-    color: #FB7826;
-    margin: 50px auto;
-    width: 30%;
-    border: 4px solid #FB7826;
-  }
+  /*=======================*/ /* Crée par Kévin */
+  /*  MAIN BISTROT TOGGLE  */
+  /*=======================*/
+    #mainbistrot{
+      position: absolute;
+      margin-top: -6px;
+      height: 200em;
+      width: 100%;
+      z-index: 99999;
+    }
+    #mainbistrot p{
+      font-size: 25px;
+    }
+    #mainbistrot section{
+      width: 40%;
+    }
+    #mainbistrot article{
+      margin: 2%;
+      height: 165px;
+      width: 30%;
+    }
+    #mainbistrot h2{
+      color: #66C755;
+    }
+    #mainbistrot p{
+      font-family: 'Mirza', cursive;
+    }
+    #mainbistrot img{
+      box-shadow: 4px 4px 5px #888888;
+    }
+    .hrsection_bistrot{
+      color: #66C755;
+      margin: 50px auto;
+      width: 30%;
+      border: 4px solid #66C755;
+    }
 /* HOVER DES BOUTONS DE LA NAV */
   .information:hover{
     color: #FB7826;
@@ -588,21 +588,27 @@ audio{
     color: white;
   }
   footer a{
+    margin: 0.35em;
     text-decoration: none;
     color: white;
   }
   footer a:hover{
-    color: rgb(252, 42, 33);
+    color: rgb(75, 163, 60);
   }
   footer article{
-    margin-top: -6.5em;
+    display: flex;
+    justify-content: flex-start;
   }
   footer h3{
-    color: #BE150E;
+    margin-bottom: 0.35em;
+    color: #FB7826;
     font-size: 25px;
   }
+  footer p{
+    margin: 0.35em;
+  }
   .fa{
-    color: #BE150E;
+    color: #FB7826;
   }
   .lienSocial{
     text-align: center;

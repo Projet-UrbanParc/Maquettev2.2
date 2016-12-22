@@ -244,7 +244,7 @@ audio{
   /*=======================*/
     #mainbistrot{
       position: absolute;
-      background-color: rgb(51, 51, 51);
+      background-color: black;
       margin-top: -6px;
       height: 45em;
       width: 100%;
@@ -402,40 +402,42 @@ audio{
     transition: 0.7s;
     color: white;
   }
-/*=======================*/
-/*  MAIN BISTROT TOGGLE  */
-/*=======================*/
-  #mainbistrot{
-    position: absolute;
-    margin-top: -6px;
-    height: 200em;
-    width: 100%;
-    z-index: 99999;
-  }
-  #mainbistrot p{
-    font-size: 25px;
-  }
-  #mainbistrot section{
-    width: 40%;
-  }
-  #mainbistrot article{
-    margin: 2%;
-    height: 165px;
-    width: 30%;
-  }
-  #mainbistrot h2{
-    color: #FB7826;
-  }
-  #mainbistrot .hrsection{
-    margin: 50px auto;
-    width: 30%;
-  }
-  #mainbistrot p{
-    font-family: 'Mirza', cursive;
-  }
-  #mainbistrot img{
-    box-shadow: 4px 4px 5px #888888;
-  }
+  /*=======================*/ /* Crée par Kévin */
+  /*  MAIN BISTROT TOGGLE  */
+  /*=======================*/
+    #mainbistrot{
+      position: absolute;
+      margin-top: -6px;
+      height: 200em;
+      width: 100%;
+      z-index: 99999;
+    }
+    #mainbistrot p{
+      font-size: 25px;
+    }
+    #mainbistrot section{
+      width: 40%;
+    }
+    #mainbistrot article{
+      margin: 2%;
+      height: 165px;
+      width: 30%;
+    }
+    #mainbistrot h2{
+      color: #66C755;
+    }
+    #mainbistrot p{
+      font-family: 'Mirza', cursive;
+    }
+    #mainbistrot img{
+      box-shadow: 4px 4px 5px #888888;
+    }
+    .hrsection_bistrot{
+      color: #66C755;
+      margin: 50px auto;
+      width: 30%;
+      border: 4px solid #66C755;
+    }
 /* HOVER DES BOUTONS DE LA NAV */
   .information:hover{
     color: #FB7826;

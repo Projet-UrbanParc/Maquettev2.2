@@ -16,6 +16,10 @@ body{
   background-color: #F8F8EC;
   z-index: 1;
 }
+/*@font-face {
+ font-family: "whoa";
+ src: url("whoa.ttf");
+}*/
 p{
   font-family: 'Mirza', cursive;
   font-size: 23px;
@@ -52,12 +56,11 @@ audio{
     background: url('../images/uplogo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom: 4px solid #FB7826;
+    border-bottom: 4px solid #158D00;
     text-shadow: 4.5px 4.5px 1px black;
   }
-
   h1{
-    color: white;
+    color: #158D00;
     font-family: 'Lobster', cursive;;
     text-shadow: 1px 2px #000;
     font-size: 36px;
@@ -103,26 +106,22 @@ audio{
     z-index: 999;
     cursor: pointer;
   }
-
   .btn-navigation .barre{
     z-index: 6;
     width: 25px;
     height: 4px;
-    background: #FF6F00;
+    background: #158D00;
     margin-top: 3px;
     transition: background .3s ease-in-out;
     -webkit-transition: background .3s ease-in-out;
   }
-
   .btn-navigation .barre.white{
-    background: #FF6F00;
+    background: #158D00;
   }
-
   nav.isOpen{
     transform: translateX(0%);
     -webkit-transform: translateX(0%);
   }
-
   nav{
     z-index: 5;
     position: fixed;
@@ -137,7 +136,6 @@ audio{
     transform: translateX(100%);
     -webkit-transform: translateX(100%);
   }
-
   nav ul{
     display: flex;
     flex-direction: column;
@@ -147,12 +145,10 @@ audio{
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
   }
-
   nav ul li{
     list-style: none;
     margin: 10px 0;
   }
-
   nav ul li a{
     text-decoration: none;
     color:  #fff;
@@ -164,83 +160,83 @@ audio{
 /*=========*/
 /*  NAV 2  */
 /*=========*/
-.nav2{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  background-color: rgb(51, 51, 51);
-  height: 35px;
-  color: white;
-}
-.nav2 p{
-  font-size: 30px;
-  font-family: 'Lobster', cursive;
-}
-.nav2 a{
-  color: white;
-}
+  .nav2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+    height: 35px;
+    color: white;
+  }
+  .nav2 p{
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+  }
+  .nav2 a{
+    color: white;
+  }
 /*------------------------------------------------*/
 
 /*==================*/
 /*  MILIEU DE PAGE  */
 /*==================*/
-main{
-  z-index: -1;
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-section{
-  display: flex;
-  margin: auto;
-  height: auto;
-  width: 90%;
-  flex-direction: column;
-  margin-top: 10px;
-}
-article{
-  display: flex;
-  flex-direction: column;
-  height: 125px;
-  padding: 2%;
-}
-article p{
-  font-size: 14px;
-}
-img{
-  height: 100%;
-  width: 100%;
-}
-.hrsection{
-  width: 60%;
-  margin: 60px auto;
-  color: #FB7826;
-  border: 4px solid #FB7826;
-}
-.txt_sec, .txt_sec1{
-  flex: 1;
-}
-.img_txt, .calendrier, .menu{
-  flex: 2;
-  height: 200px;
-}
+  main{
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  section{
+    display: flex;
+    margin: auto;
+    height: auto;
+    width: 90%;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  article{
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    padding: 2%;
+  }
+  article p{
+    font-size: 14px;
+  }
+  img{
+    height: 100%;
+    width: 100%;
+  }
+  .hrsection{
+    width: 60%;
+    margin: 60px auto;
+    color: #158D00;
+    border: 4px solid #158D00;
+  }
+  .txt_sec, .txt_sec1{
+    flex: 1;
+  }
+  .img_txt, .calendrier, .menu{
+    flex: 2;
+    height: 200px;
+  }
 /*========*/
 /*  MAPS  */
 /*========*/
-.maps{
-  border-top: 3px solid #FB7826;
-  border-radius: 10px 10px 0px 0px;
-}
+  .maps{
+    border-top: 3px solid #158D00;
+    border-radius: 10px 10px 0px 0px;
+  }
 /*=======================*/
 /*  MAIN BISTROT TOGGLE  */
 /*=======================*/
   #mainbistrot{
     position: absolute;
-    background-color: rgb(51, 51, 51);
+    background-color: black;
     margin-top: -6px;
     height: 45em;
     width: 100%;
@@ -280,7 +276,6 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     background-color: #222;
     color: white;
   }
@@ -289,10 +284,10 @@ img{
     color: white;
   }
   footer a:hover{
-    color: #FB7826;
+    color: rgb(75, 163, 60);
   }
   footer h3{
-    color: #FB7826;
+    color: #158D00;
     font-size: 24px;
     margin-bottom: 0.5em;
   }
@@ -303,7 +298,7 @@ img{
     margin-bottom: -50px;
   }
   .fa{
-    color: #FB7826;
+    color: #158D00;
   }
   .lienSocial{
     text-align: center;
@@ -321,9 +316,9 @@ img{
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
 
-/*=========================================================*/
-/*   RESPONSIVE   (min-width: 1263px and max-width: 1920px)  */
-/*=========================================================*/
+/*===========================================================*/
+/*   RESPONSIVE   (min-width: 1263px and max-width: 1920px)  */ /* Couleur changer par Kévin */
+/*===========================================================*/
 
 @media all and (min-width: 1263px) and (max-width: 1920px) {
 
@@ -398,41 +393,42 @@ img{
     transition: 0.7s;
     color: white;
   }
-/*=======================*/
-/*  MAIN BISTROT TOGGLE  */
-/*=======================*/
-  #mainbistrot{
-    background-color: black;
-    position: absolute;
-    margin-top: -6px;
-    height: 200em;
-    width: 100%;
-    z-index: 99999;
-  }
-  #mainbistrot p{
-    font-size: 25px;
-  }
-  #mainbistrot section{
-    width: 40%;
-  }
-  #mainbistrot article{
-    margin: 2%;
-    height: 165px;
-    width: 30%;
-  }
-  #mainbistrot h2{
-    color: #FB7826;
-  }
-  #mainbistrot .hrsection{
-    margin: 50px auto;
-    width: 30%;
-  }
-  #mainbistrot p{
-    font-family: 'Mirza', cursive;
-  }
-  #mainbistrot img{
-    box-shadow: 4px 4px 5px #888888;
-  }
+  /*=======================*/ /* Crée par Kévin */
+  /*  MAIN BISTROT TOGGLE  */
+  /*=======================*/
+    #mainbistrot{
+      position: absolute;
+      margin-top: -6px;
+      height: 200em;
+      width: 100%;
+      z-index: 99999;
+    }
+    #mainbistrot p{
+      font-size: 25px;
+    }
+    #mainbistrot section{
+      width: 40%;
+    }
+    #mainbistrot article{
+      margin: 2%;
+      height: 165px;
+      width: 30%;
+    }
+    #mainbistrot h2{
+      color: #66C755;
+    }
+    #mainbistrot p{
+      font-family: 'Mirza', cursive;
+    }
+    #mainbistrot img{
+      box-shadow: 4px 4px 5px #888888;
+    }
+    .hrsection_bistrot{
+      color: #66C755;
+      margin: 50px auto;
+      width: 30%;
+      border: 4px solid #66C755;
+    }
 /* HOVER DES BOUTONS DE LA NAV */
   .information:hover{
     color: #FB7826;
@@ -529,18 +525,6 @@ img{
   span{
     font-size: 16px;
   }
-  .img_logo img{
-    width: 42em;
-  }
-
-  .image_infos {
-    width: 80%;
-  }
-
-  .image_infos img{
-    border: 2px solid black;
-    margin-left: 2em;
-  }
   .hrsection{
     width: 40%;
     margin: 60px auto;
@@ -562,7 +546,7 @@ img{
 
 /*===============*/
 /*  SECTION MAP  */
-/*===============*/
+/*=============== Pourquoi ne pas appeler directement iframe? (Alex)*/
   .maps{
     border-top: 3px solid #FB7826;
     border-radius: 10px 10px 0px 0px;
@@ -583,18 +567,24 @@ img{
     color: white;
   }
   footer a{
+    margin: 0.35em;
     text-decoration: none;
     color: white;
   }
   footer a:hover{
-    color: #FB7826;
+    color: rgb(75, 163, 60);
   }
   footer article{
-    margin-top: -6.5em;
+    display: flex;
+    justify-content: flex-start;
   }
   footer h3{
+    margin-bottom: 0.35em;
     color: #FB7826;
     font-size: 25px;
+  }
+  footer p{
+    margin: 0.35em;
   }
   .fa{
     color: #FB7826;

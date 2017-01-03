@@ -14,5 +14,6 @@ $(document).ready(function(){
     $('#boutonbistrot').click(function(){
       $('#mainbistrot').css("background-color", "rgba(0, 0, 0, 0.95)");
       $('#mainbistrot').toggle('blind');
+      $('#mainbistrot').toggleClass('main_bistrot');
     });
   });

@@ -12,7 +12,6 @@
 /*  GENERAL  */
 /*===========*/
 body{
-  /*background-color: #222;*/
   background-color: #F8F8EC;
   z-index: 1;
 }
@@ -261,6 +260,12 @@ audio{
   #mainbistrot img{
     display: none;
   }
+  .main_bistrot{
+    z-index: 1000;
+  }
+  .test{
+    color: red;
+  }
   .hrsection_bistrot{
     color: #FB7826;
     margin: 5px auto;
@@ -317,7 +322,7 @@ audio{
 /*---------------------------------------------------------------------------------------------------------------------*/
 
 /*===========================================================*/
-/*   RESPONSIVE   (min-width: 1263px and max-width: 1920px)  */ /* Couleur changer par Kévin */
+/*   RESPONSIVE   (min-width: 1263px and max-width: 1920px)  */
 /*===========================================================*/
 
 @media all and (min-width: 1263px) and (max-width: 1920px) {
@@ -341,14 +346,13 @@ audio{
    }
    li{
      height: 100%;
-     width: 50%;   /* Ajout de taille pour les border (Camille) */
+     width: 50%;
      list-style: none;
      font-size: 0.5px;
-     border-right: 2px solid #FB7826;  /* Ajout de la border  (Camille) */
+     border-right: 2px solid #FB7826;
    }
    li:last-child{
-
-    border: none;   /* On retire la derniere border pour plus de style (Camille) */
+    border: none;
   }
   nav  a{
      display: flex;
@@ -393,42 +397,41 @@ audio{
     transition: 0.7s;
     color: white;
   }
-  /*=======================*/ /* Crée par Kévin */
-  /*  MAIN BISTROT TOGGLE  */
-  /*=======================*/
-    #mainbistrot{
-      position: absolute;
-      margin-top: -6px;
-      height: 200em;
-      width: 100%;
-      z-index: 99999;
-    }
-    #mainbistrot p{
-      font-size: 25px;
-    }
-    #mainbistrot section{
-      width: 40%;
-    }
-    #mainbistrot article{
-      margin: 2%;
-      height: 165px;
-      width: 30%;
-    }
-    #mainbistrot h2{
-      color: #66C755;
-    }
-    #mainbistrot p{
-      font-family: 'Mirza', cursive;
-    }
-    #mainbistrot img{
-      box-shadow: 4px 4px 5px #888888;
-    }
-    .hrsection_bistrot{
-      color: #66C755;
-      margin: 50px auto;
-      width: 30%;
-      border: 4px solid #66C755;
-    }
+/*=======================*/
+/*  MAIN BISTROT TOGGLE  */
+/*=======================*/
+  #mainbistrot{
+    position: absolute;
+    margin-top: -6px;
+    height: 200em;
+    width: 100%;
+  }
+  #mainbistrot p{
+    font-size: 25px;
+  }
+  #mainbistrot section{
+    width: 40%;
+  }
+  #mainbistrot article{
+    margin: 2%;
+    height: 165px;
+    width: 30%;
+  }
+  #mainbistrot h2{
+    color: #FB7826;
+  }
+  #mainbistrot p{
+    font-family: 'Mirza', cursive;
+  }
+  #mainbistrot img{
+    box-shadow: 4px 4px 5px #888888;
+  }
+  .hrsection_bistrot{
+    color: #FB7826;
+    margin: 50px auto;
+    width: 30%;
+    border: 4px solid #FB7826;
+  }
 /* HOVER DES BOUTONS DE LA NAV */
   .information:hover{
     color: #FB7826;
@@ -493,7 +496,6 @@ audio{
   main{
     margin-top: 30px;
     margin-bottom: 30px;
-    z-index: -1;
   }
   section{
     display: flex;
@@ -502,9 +504,7 @@ audio{
     width: 70%;
     flex-direction: row;
     margin-top: 30px;
-    /*background-color: #F8F3D1;*/
   }
-
   article{
     justify-content: space-around;
     flex-direction: column;
@@ -512,11 +512,9 @@ audio{
     padding: 2%;
     display: flex;
   }
-
   h2{
     font-family: 'Lobster', cursive;
   }
-
   img{
     height: 100%;
     width: 100%;
@@ -537,7 +535,6 @@ audio{
   .img_txt, .calendrier, .menu{
     flex: 1;
   }
-
   .image_bistrot{
     margin-left: 30em;
   }
@@ -546,7 +543,7 @@ audio{
 
 /*===============*/
 /*  SECTION MAP  */
-/*=============== Pourquoi ne pas appeler directement iframe? (Alex)*/
+/*===============*/
   .maps{
     border-top: 3px solid #FB7826;
     border-radius: 10px 10px 0px 0px;
@@ -558,34 +555,90 @@ audio{
 /*==========*/
 /*  FOOTER  */
 /*==========*/
-  footer{
+footer{
+  display: flex;
+  flex-direction: row;
+  background-color: #222;
+  padding-bottom: 1.5em;
+
+}
+footer section{
+  display: flex;
+  align-items: center;
+}
+h4{
+  margin-left: 1.5em;
+  margin-top: 0.75em;
+  transform: rotate(-18deg);
+  font-size: 25px;
+  color: white;
+  font-family: 'Lobster', cursive;
+}
+
+footer a{
+  margin: 0.25em;
+  color: white;
+}
+footer a:hover{
+  color: #FB7826;
+}
+footer p{
+  margin: 0.25em;
+  color: white;
+}
+.fa-facebook-official{
+  transition: 0.7s;
+}
+.fa-facebook-official:hover{
+  color: #395794;
+  transition: 0.7s;
+}
+
+.titre{
+  background-image: url("../images/skate2.png");
+  height: 5.8em;
+  width: 12.4em;
+}
+
+.urban-parc{
+  flex-direction: column;
+}
+.contenue{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.revoir{
+  flex-direction: column;
+}
+.adresse{
+  flex-direction: column;
+}
+
+.partenaire{
+  flex-direction: column;
+}
+
+.liens{
+  flex-direction: column;
+}
+
+/*==============*/
+/* IMAGE SKATE  */
+/*==============*/
+
+  .img_footer{
+    background-image: url("../images/skate2.png");
+    background-repeat: no-repeat;
+    background-size: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
-    background-color: #222;
-    color: white;
+    width: 200px;
+    height: 150px;
+    transform: rotate(3deg);
   }
-  footer a{
-    margin: 0.35em;
-    text-decoration: none;
-    color: white;
-  }
-  footer a:hover{
-    color: rgb(75, 163, 60);
-  }
-  footer article{
-    display: flex;
-    justify-content: flex-start;
-  }
-  footer h3{
-    margin-bottom: 0.35em;
-    color: #FB7826;
-    font-size: 25px;
-  }
-  footer p{
-    margin: 0.35em;
-  }
+/*----------------------*/
+
   .fa{
     color: #FB7826;
   }
@@ -603,7 +656,7 @@ audio{
 }
 
 
-/*---------------------------------------------  (Camille)  */
+/*---------------------------------------------*/
 
 /*============*/
 /* Animation */
